@@ -1,0 +1,573 @@
+.navbar-collapse.show .nav-item-link {
+  background-color: white;
+  color: #007bff;
+  border-radius: 5px;
+  margin: 5px 0; /* Adjusts spacing in collapsed mode */
+}
+
+.navbar-collapse.show .nav-item-link:hover {
+  background-color: hsl(210, 17%, 98%);
+  width: 100vw;
+  color: #0056b3;
+}
+
+
+/* Carousel Text Animation */
+.carousel-caption h1,
+.carousel-caption p {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card Hover Effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel Images */
+.carousel-item img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item.active img {
+  transform: scale(1.1);
+}
+
+/* Text Styling for Cards */
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Service Section */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-out;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Button Styling (if needed later) */
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* About Section Base Styling */
+.about-section {
+  margin: 4rem 0;
+  padding: 2rem;
+  background: linear-gradient(to right, #ffffff, #f8f9fa);
+  border-radius: 15px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+/* Text Content Styling */
+.about-text {
+  flex: 1;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2c3e50;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #1a237e;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.about-text h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #007bff;
+  border-radius: 2px;
+}
+
+/* List Styling with Font Awesome */
+.about-text ul {
+  list-style: none;
+  padding-left: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.about-text ul li {
+  margin: 1rem 0;
+  position: relative;
+  padding-left: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.about-text ul li:hover {
+  transform: translateX(10px);
+}
+
+/* Font Awesome Icons */
+.about-text ul li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #007bff;
+}
+
+.about-text ul li:nth-child(1)::before {
+  content: "\f058"; /* check-circle */
+}
+
+.about-text ul li:nth-child(2)::before {
+  content: "\f0b1"; /* briefcase */
+}
+
+.about-text ul li:nth-child(3)::before {
+  content: "\f19d"; /* graduation-cap */
+}
+
+.about-image {
+  flex: 1.5; /* Increased from 1 to 1.5 for larger size */
+  text-align: left;
+  position: relative;
+  min-width: 500px; /* Ensures minimum width */
+  
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: none;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: translateY(-5px);
+  /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); */
+}
+/* Feature List Styling */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateX(10px);
+}
+
+.feature-icon {
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+/* Decorative Elements */
+.about-image::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #007bff;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .about-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+  }
+
+  .about-text h2::after {
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .about-text ul li {
+      padding-left: 0;
+      padding-top: 1.5rem;
+  }
+
+  .about-text ul li::before {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+  }
+
+  .about-image::before {
+      display: none;
+  }
+}
+  
+  .logo-showcase {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e5e9f2 100%);
+    padding: 40px 0;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 10px 0;
+  }
+  
+  .logo-card {
+    perspective: 1000px;
+    height: 200px;
+    cursor: pointer;
+  }
+  
+  .logo-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .logo-card:hover .logo-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .logo-card-front,
+  .logo-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .logo-card-front {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateZ(50px);
+  }
+  
+  .logo-card-back {
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo-circle {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .logo-card:hover .logo-circle {
+    transform: scale(1.05);
+  }
+  
+  /* Add floating animation */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .logo-card {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Add staggered animation delay for each card */
+  .logo-card:nth-child(odd) {
+    animation-delay: 0.5s;
+  }
+  
+  .logo-card:nth-child(even) {
+    animation-delay: 1s;
+  }
+  
+  /* Add shine effect */
+  .logo-circle::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      45deg,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.8) 50%,
+      rgba(255,255,255,0) 100%
+    );
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+  }
+  
+  @keyframes shine {
+    0% { transform: translateX(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) rotate(45deg); }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .gradient-text {
+      font-size: 2rem;
+    }
+    
+    .logo-card {
+      height: 150px;
+      margin-bottom: 20px;
+    }
+  }
+ /* Cards Showcase Section */
+.cards-showcase {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f6f9fc 0%, #f1f4f8 100%);
+}
+
+.cards-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #2d3436;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.cards-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #00c6fb 0%, #005bea 100%);
+  border-radius: 2px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Flip Card Styles */
+.flip-card {
+  width: 32%;
+  height: 500px;
+  perspective: 1500px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front img,
+.flip-card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Card Overlay */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  padding: 1.5rem;
+  color: white;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.card-overlay h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-overlay p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Hover Effects */
+.flip-card:hover img {
+  transform: scale(1.05);
+}
+
+.flip-card:hover .card-overlay {
+  transform: translateY(-5px);
+}
+
+/* Animation */
+@keyframes cardFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.flip-card {
+  animation: cardFloat 6s ease-in-out infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cards-container {
+    gap: 2rem;
+  }
+  
+  .flip-card {
+    width: 300px;
+    height: 420px;
+  }
+  
+  .cards-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .flip-card {
+    width: 280px;
+    height: 400px;
+  }
+  
+  .card-overlay h3 {
+    font-size: 1.25rem;
+  }
+}
