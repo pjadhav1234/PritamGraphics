@@ -159,8 +159,8 @@ const DesignerWebsite = () => {
 <div className=" about-section " id='about-section'>
     <div className="row align-items-center">
     {/* <!-- Right Column - Images --> */} 
-        <div className="col-lg-6 col-12 col-md-6  mb-4 mb-md-0">
-             <div className="row g-4 about-image-wrapper position-relativecontainer">
+        <div className="col-lg-6">
+             <div className="row g-4 container">
               
                 <div className="col-6">
                     <div className="about-image">
@@ -307,8 +307,8 @@ const DesignerWebsite = () => {
 {/* Cards Section */}
 <section className="cards-showcase">
   <h1 className="cards-title">SOME MENU CARDS BY US</h1>
-  <div className="cards-container col-12 col-sm-6 col-md-4 mb-4">
-    <div className="flip-card col-4 row g-4">
+  <div className="cards-container">
+    <div className="flip-card col-4">
       <div className="flip-card-inner">
         <div className="flip-card-front">
           <img src={frontBrandyTemp} alt="Brandy's Cafe Front" />
@@ -371,8 +371,8 @@ const DesignerWebsite = () => {
 {/* Cards Section */}
 <section className="cards-showcase">
   <h1 className="cards-title">SOME WEDDING AND PRINTING CARDS BY US</h1>
-  <div className="cards-container col-12 col-sm-6 col-md-4 mb-4 ">
-    <div className="flip-card col-4 row g-4">
+  <div className="cards-container row">
+    <div className="flip-card col-md-4 col-md-4 col-sm-6 col-12">
       <div className="flip-card-inner">
         <div className="flip-card-front">
           <img src={frontweeding} alt="Brandy's Cafe Front" />
